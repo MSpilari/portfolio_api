@@ -1,7 +1,4 @@
 const mongoose =  require('mongoose')
-const dotenv = require('dotenv')
-
-dotenv.config()
 
 const db_configs = {
     username: process.env.DB_USER,
