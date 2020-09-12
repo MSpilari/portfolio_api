@@ -11,11 +11,12 @@ Essa é a API que está sendo consumida pelo meu [**site de portfolio**](https:/
 
 ## Rotas
 
-- Uma rota que **cria(CREATE)** os projetos no banco de dados.
+- Uma rota que **cria(CREATE)** os projetos no banco de dados, é uma rota privada e precisa de um **JSON Web Token**.
 - Uma rota que **lista(READ)** todos os projetos do banco de dados.
-- Duas rotas de **deleção(DELETE)**.
+- Duas rotas de **deleção(DELETE)**, são rotas privadas e precisam de um **JSON Web Token**.
   - Uma delas deleta apenas um projeto específico.
   - Outra deleta todos os componentes do Banco de dados.
+- Existe uma rota de login que envia um **JSON Web Token** para o usuário.
 
 ## Tecnologias usadas
 
