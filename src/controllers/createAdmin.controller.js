@@ -34,7 +34,7 @@ const findAdmin = async (req, res) => {
     
     const token =  jwt.sign({_id: adminExists._id}, process.env.SECRET_TOKEN)
 
-    return res.status(200).json({'auth-token': token })
+    return res.header('auth-token', token).json({'auth-token': token }).status(200)
 }
 
 module.exports = { createAdmin, findAdmin }
